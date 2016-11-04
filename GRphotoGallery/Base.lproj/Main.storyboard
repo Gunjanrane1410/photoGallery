@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lrn-ve-vYi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Oat-Py-Nwj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZV9-o6-YTY">
+                                <rect key="frame" x="120" y="260" width="140" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="P4o-MW-2sJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="wev-52-IGb"/>
+                                </constraints>
+                                <state key="normal" title="open camera"/>
+                                <connections>
+                                    <action selector="openCameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0U0-QO-Vap"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLZ-1C-6tv">
+                                <rect key="frame" x="120" y="347" width="140" height="40"/>
+                                <state key="normal" title="mail"/>
+                                <connections>
+                                    <action selector="mailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxZ-HC-cmZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5R8-Wy-LqG">
+                                <rect key="frame" x="120" y="395" width="140" height="40"/>
+                                <state key="normal" title="SMS"/>
+                                <connections>
+                                    <action selector="SMSAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hNe-4Y-CBJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCm-F4-RQv">
+                                <rect key="frame" x="120" y="308" width="140" height="40"/>
+                                <state key="normal" title="open Photo Album"/>
+                                <connections>
+                                    <action selector="openAlbumAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="616-DI-ARr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39055847799999999" green="0.7529246235" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LLZ-1C-6tv" firstAttribute="width" secondItem="MCm-F4-RQv" secondAttribute="width" id="12R-5f-N3s"/>
+                            <constraint firstItem="MCm-F4-RQv" firstAttribute="leading" secondItem="ZV9-o6-YTY" secondAttribute="leading" id="6SG-f3-I2r"/>
+                            <constraint firstItem="ZV9-o6-YTY" firstAttribute="top" secondItem="lrn-ve-vYi" secondAttribute="bottom" constant="10" id="6XS-Nk-x7k"/>
+                            <constraint firstItem="5R8-Wy-LqG" firstAttribute="width" secondItem="LLZ-1C-6tv" secondAttribute="width" id="7fn-sH-rOa"/>
+                            <constraint firstItem="MCm-F4-RQv" firstAttribute="height" secondItem="ZV9-o6-YTY" secondAttribute="height" id="8jV-SJ-axA"/>
+                            <constraint firstItem="lrn-ve-vYi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Bh0-Kj-ZMp"/>
+                            <constraint firstItem="5R8-Wy-LqG" firstAttribute="height" secondItem="LLZ-1C-6tv" secondAttribute="height" id="DYJ-WF-yWu"/>
+                            <constraint firstItem="5R8-Wy-LqG" firstAttribute="leading" secondItem="LLZ-1C-6tv" secondAttribute="leading" id="E31-eh-klU"/>
+                            <constraint firstItem="LLZ-1C-6tv" firstAttribute="top" secondItem="MCm-F4-RQv" secondAttribute="bottom" constant="-1" id="QPl-aO-ZMA"/>
+                            <constraint firstItem="MCm-F4-RQv" firstAttribute="top" secondItem="ZV9-o6-YTY" secondAttribute="bottom" constant="8" id="TdJ-jm-jh3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lrn-ve-vYi" secondAttribute="trailing" constant="-20" id="VtR-KW-iTZ"/>
+                            <constraint firstItem="LLZ-1C-6tv" firstAttribute="height" secondItem="MCm-F4-RQv" secondAttribute="height" id="ZJl-Ju-6s9"/>
+                            <constraint firstItem="lrn-ve-vYi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ex6-Ph-xtL"/>
+                            <constraint firstItem="LLZ-1C-6tv" firstAttribute="leading" secondItem="MCm-F4-RQv" secondAttribute="leading" id="iwe-AC-eef"/>
+                            <constraint firstItem="ZV9-o6-YTY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="jii-qq-uL1"/>
+                            <constraint firstItem="MCm-F4-RQv" firstAttribute="width" secondItem="ZV9-o6-YTY" secondAttribute="width" id="llW-fj-UKL"/>
+                            <constraint firstItem="5R8-Wy-LqG" firstAttribute="top" secondItem="LLZ-1C-6tv" secondAttribute="bottom" constant="8" id="y3L-aK-M89"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="lrn-ve-vYi" id="VMj-vq-qMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
